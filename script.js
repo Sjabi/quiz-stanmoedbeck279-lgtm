@@ -30,8 +30,12 @@ function toonVraag() {
     let antwoordenDiv = document.getElementById("antwoorden");
 
     // TODO: vraag tonen
+    vraagElement.textContent = vragen[huidigeVraag].vraag;
     // TODO: antwoorden genereren (buttons!)
-
+    antwoordenDiv.innerHTML = "";
+    var button = document.createElement("button");
+    button.textContent = vragen[huidigeVraag].antwoorden[0];
+    
 }
 
 
